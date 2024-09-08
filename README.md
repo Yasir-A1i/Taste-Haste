@@ -1,2 +1,1 @@
-# Taste-Haste c
-gdhxchmgc
+# Taste-Haste
