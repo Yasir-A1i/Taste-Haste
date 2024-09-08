@@ -1,0 +1,161 @@
+:root{
+    --light:#59ff00;
+    --dark:#007d21;
+    --grad: linear gradient(to right, var(--light), var(--dark))
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Fira Sans" , 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("1x/bg.png");
+    background-size: auto;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact{
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    transition: all 0.8s ease-in-out;
+    border-width: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.contact:hover{
+    box-shadow: 0px 0px 20px rgb(100, 100, 100);
+    border: 4px solid var(--light);
+    border-radius: 50px;
+}
+.contacttxt{
+    width: 100%;
+    height: 10%;
+    background-color: var(--dark);
+    border-top-left-radius: 48px;
+    border-top-right-radius: 48px;
+    text-align: center;
+    color: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all 1s ease-in-out;
+    display: block;
+}
+
+.form{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 50px ;
+    margin-top: 10px;
+}
+
+.fname{
+    width: 30%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 5px;
+}
+.lname{
+    width: 30%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.email{
+    width: 30%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+input{
+    padding: 10px;
+    font-size: 1rem;
+    border-width: 0;
+    border: 2px solid rgb(205, 205, 205);
+    border-radius: 10px;
+}
+.MCQs{
+    width: 100%;
+}
+
+form p {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+form input{
+    margin-left: 10px;
+}
+.explain{
+    width: 100%;
+    margin-left: 10px;
+}
+.explain input{
+    width: 90%;
+    height: 40px;
+}
+textarea{
+    width: 90%;
+    height: 80px;
+    border-width: 0;
+    border: 2px solid rgb(195, 195, 195);
+    border-radius: 10px;
+}
+.explain h1{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.explain textarea{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+.explain button{
+    width: 150px;
+    height: 50px;
+    border-width: 0;
+    background-color: #59ff00;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+button:hover{
+    background-color: #7dff37;
+}
+.inputs {
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Optional: Use gap to add spacing between items */
+}
+
+.fname, .lname, .email {
+    flex: 1 1 30%; /* Flex-grow, flex-shrink, and flex-basis */
+    max-width: 30%; /* Ensure maximum width for wrapping */
+    box-sizing: border-box;
+    margin-left: 5px; /* Remove margin to prevent overflow */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .fname, .lname, .email {
+        flex: 1 1 100%; /* Stack items on small screens */
+        max-width: 100%;
+    }
+}
