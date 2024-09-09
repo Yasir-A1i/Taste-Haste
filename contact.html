@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="contact">
+        <h1 class="contacttxt">Contact Us</h1>
+        <div class="form">
+            <div class="inputs">
+            <div class="fname">
+                <div class="fnametxt">Your First name*</div>
+                <input type="text" class="fname_input" placeholder="Enter First Name">
+            </div>
+            <div class="lname">
+                <div class="lnametxt">Your Last name(optional)</div>
+                <input type="text" class="lname_input" placeholder="Enter Last Name">
+            </div>
+            <div class="email">
+                <div class="emailtxt">Enter your Email*</div>
+                <input type="email" required minlength="8" class="email_input" placeholder="Enter You Email">
+            </div>
+        </div>
+            <div class="MCQs">
+                <form>
+                    <p>Reason for contacting us?</p>
+                    <label>
+                        <input type="radio" name="contactReason" value="problem">
+                        Any problem
+                    </label>
+                    <label>
+                        <input type="radio" name="contactReason" value="issue">
+                        Report an Issue
+                    </label>
+                    <label>
+                        <input type="radio" name="contactReason" value="feedback">
+                        Feedback
+                    </label>
+                    <label>
+                        <input type="radio" name="contactReason" value="suggestion">
+                        Any Suggestion
+                    </label>
+                    <label>
+                        <input type="radio" name="contactReason" value="other">
+                        Something Other
+                    </label>
+                </form>
+            </div>
+            <div class="explain">
+            <h1>Why are you contacting us?</h1>
+            <form action="#" method="post">
+                <label for="userInput">Type your text below:</label><br>
+                <textarea id="userInput" name="userInput" spellcheck="true"></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

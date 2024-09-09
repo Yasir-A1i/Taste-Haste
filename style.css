@@ -1,0 +1,829 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Sans" , 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    position: relative;
+    height: 100vh;
+    overflow-x: hidden;
+}
+:root{
+    --light:#59ff00;
+    --dark:#007d21;
+    --grad: linear gradient(to right, var(--light), var(--dark))
+}
+
+.home{
+    position: relative;
+    width: max-content;
+    font-weight: bolder;
+}
+.home::after{
+    content: '';
+    position: absolute;
+    background-color: var(--dark);
+    left: 0;
+    border-radius: 100px;
+    bottom: -2px;
+    height: 20%;
+   transition: all 0.25s ease-in;
+   width: 0;
+}
+.home:hover::after{
+   
+    width: 100%;    
+    background-color: var(--light);
+}
+.help{
+
+    position: relative;
+    width: max-content;font-weight: bolder;
+}
+.help::after{
+    border-radius: 100px;
+    content: '';
+    position: absolute;
+    background-color: var(--dark);
+    left: 0;
+    bottom: -2px;
+    height: 20%;
+    transition: all 0.25s ease-in;
+    width: 0;
+}
+.help:hover::after{
+   
+    width: 100%;   
+    background-color: var(--light); 
+}
+.contact{
+
+    position: relative;
+    width: max-content;
+    font-weight: bolder;
+}
+.contact::after{
+    border-radius: 100px;
+    content: '';
+    position: absolute;
+    background-color: var(--dark);
+    left: 0;
+    bottom: -2px;
+    height: 20%;
+    transition: all 0.25s ease-in;
+    width: 0;
+}
+.contact:hover::after{
+   
+    width: 100%;    
+    background-color: var(--light);
+}
+.about{
+    
+    position: relative;
+    width: max-content;
+    font-weight: bolder;
+}
+.about::after{
+    border-radius: 100px;
+    content: '';
+    position: absolute;
+    background-color: var(--dark);
+    left: 0;
+    bottom: -2px;
+    height: 20%;
+    transition: all 0.25s ease-in;
+    width: 0;
+}
+.about:hover::after{
+   
+    width: 100%;    
+    background-color: var(--light);
+}
+.main{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+.mmain {
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+
+
+}
+
+nav {
+    position: fixed;
+    z-index: 2;
+    background-color:rgb(255, 243, 243);  
+    top: 5px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.327);
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    align-items: center;
+    height: 70px;
+    flex-wrap: wrap;
+    width: 90vw;
+    margin: auto;
+    background-image: url("bg.png");
+    background-size: 150%;
+
+}
+
+button {
+    cursor: pointer;
+}
+
+nav * {
+    cursor: pointer;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+nav a:visited {
+    color: black;
+}
+
+
+.logo {
+    width: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+}
+
+.logo .img {
+    width: 50px;
+    height: 50px;
+    background-image: url("logo.png");
+    background-size: contain;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.258);
+
+}
+
+.logo .text1 {
+    color: var(--light);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.logo .text2 {
+    color: var(--dark);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.signup {
+    color: white;
+    background-image: url("Artboard\ 1\ copy.png");
+    border-width: 0;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 8px;
+    background-size: cover;
+    position: relative;
+
+}
+
+.signup:hover {
+    box-shadow: 12px 16px 20px rgba(0, 0, 0, 0.2);
+    top: 3px;
+    left: 3px;
+}
+
+.signup:active {
+
+    border: 2px solid var(--light);
+    background: transparent;
+    color: var(--dark);
+    padding: 8px;
+
+}
+
+.mmain {
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.mmain{
+     border-bottom: 4px solid  #59ff0058;
+}
+.mmain video {
+    width: 400px;
+}
+
+.mmain header {
+    color: var(--light);
+    font-size: 3rem;
+    font-weight: 700;
+    width: 50vw;
+
+}
+
+header div {
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--dark);
+}
+
+
+header span {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--light);
+}
+
+.cook {
+    font-size: 1.5rem;
+    padding: 8px;
+    border-width: 0;
+    background-color: white;
+    background-size: cover;
+    color: var(--dark);
+    border: 4px solid var(--light);
+    border-radius: 7px;
+    position: relative;
+
+}
+
+.order {
+    font-size: 1.5rem;
+    padding: 12px;
+    border-width: 0;
+    background-image: url("Artboard\ 1\ copy.png");
+    background-size: cover;
+    color: white;
+    border-radius: 7px;
+    position: relative;
+}
+
+.order:active {
+
+
+    font-size: 1.5rem;
+    padding: 8px;
+    border-width: 0;
+    background: white;
+    background-size: cover;
+    color: var(--dark);
+    border: 4px solid var(--light);
+    border-radius: 7px;
+}
+
+.cook:active {
+    font-size: 1.5rem;
+    padding: 12px;
+    border-width: 0;
+    background-image: url("Artboard\ 1\ copy.png");
+    background-size: cover;
+    color: white;
+    border-radius: 7px;
+
+}
+
+.cook:hover {
+    box-shadow: 12px 16px 20px rgba(0, 0, 0, 0.2);
+    top: 3px;
+    left: 3px;
+}
+
+.order:hover {
+    box-shadow: 12px 16px 20px rgba(0, 0, 0, 0.2);
+    top: 3px;
+    left: 3px;
+}
+
+
+
+
+
+@media screen and (max-width:900px) {
+    .signup{
+        font-weight: normal;
+    }
+    .signup:active{
+        font-weight: normal;
+    }
+    .signup:hover{
+        font-weight: normal;
+    }
+    .mmain {
+        height: 65vh;
+    }
+
+    .mmain * {
+        font-size: 1.5rem;
+    }
+
+    .mmain header {
+        font-size: 2.5rem;
+    }
+
+    .order {
+        font-size: 1.2rem;
+    }
+
+    .cook {
+        font-size: 1.2rem;
+    }
+
+    .order:active {
+        font-size: 1.2rem;
+    }
+
+    .cook:active {
+        font-size: 1.2rem;
+    }
+
+    .mmain video {
+        width: 350px;
+    }
+
+    nav {
+        height: 80px;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width:750px) {
+    .signup{
+        font-weight: normal;
+    }
+    .signup:active{
+        font-weight: normal;
+    }
+    .signup:hover{
+        font-weight: normal;
+    }
+    .mmain {
+        height: 55vh;
+    }
+    .mmain * {
+        font-size: 1.2rem;
+    }
+
+    .mmain header {
+        font-size: 2.2rem;
+  
+    }
+    .tagline{
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+
+    .order {
+        font-size: 0.9rem;
+    }
+
+    .cook {
+        font-size: 0.9rem;
+    }
+
+    .order:active {
+        font-size: 0.9rem;
+    }
+
+    .cook:active {
+        font-size: 0.9rem;
+    }
+
+    .mmain video {
+        width: 250px;
+    }
+    .signup{
+        padding: 5px;
+        font-size: 1rem;
+    }
+    .signup:active{
+        padding: 3.5px;
+        font-size: 1rem;
+        margin-left: -3px;
+    }
+    .signup:hover{
+        padding: 5px;
+        font-size: 1rem;
+    }
+    .about{
+        display: none;
+    }
+    
+}
+
+
+
+
+
+@media screen and (max-width:600px) {
+    .signup{
+        font-weight: normal;
+    }
+    .signup:active{
+        font-weight: normal;
+    }
+    .signup:hover{
+        font-weight: normal;
+    }
+    .order {
+        font-size: 0.8rem;
+    }
+
+    .cook {
+        font-size: 0.8rem;
+    }
+
+    .order:active {
+        font-size: 0.8rem;
+    }
+
+    .cook:active {
+        font-size: 0.8rem;
+    }
+    
+}
+
+@media  screen and (max-width:550px) {
+    .signup{
+        font-weight: normal;
+    }
+    .signup:active{
+        font-weight: normal;
+    }
+    .signup:hover{
+        font-weight: normal;
+    }
+    .order {
+        font-size: 0.8rem;
+        padding: 10px;
+        border: 2px solid var(--light);
+    }
+    
+    .cook {
+        font-size: 0.8rem;
+        padding: 7px;
+        border: 2px solid var(--light);
+
+    }
+    
+    .order:active {
+        font-size: 0.8rem;
+        padding: 10px;
+        border: 2px solid var(--light);
+
+    }
+    
+    .cook:active {
+        font-size: 0.8rem;
+        padding: 7px;
+        border: 2px solid var(--light);
+
+    }
+    .contact{
+        display: none;
+    }
+    
+    }
+@media  screen and (max-width:500px) {
+    .signup{
+        font-weight: normal;
+    }
+    .signup:active{
+        font-weight: normal;
+    }
+    .signup:hover{
+        font-weight: normal;
+    }
+    .order {
+        font-size: 0.7rem;
+        border: 2px solid var(--light);
+        padding: 10px;
+    }
+    
+    .cook {
+        font-size: 0.7rem;
+        border: 2px solid var(--light);
+        padding: 8px;
+    }
+    
+    .order:active {
+        font-size: 0.7rem;
+        border: 2px solid var(--light);
+        padding: 10px;
+    }
+    
+    .cook:active {
+        font-size: 0.7rem;
+        border: 2px solid var(--light);
+        padding: 8px;
+    }
+    .contact{
+        display: none;
+    }
+    
+    .mmain video{
+        width: 200px;
+    }
+    }
+
+    @media screen and (max-width:450px){
+        .order {
+            font-size: 0.6rem;
+            border: 2px solid var(--light);
+            padding: 10px;
+        }
+        
+        .cook {
+            font-size: 0.6rem;
+            border: 2px solid var(--light);
+            padding: 8px;
+        }
+        
+        .order:active {
+            font-size: 0.6rem;
+            border: 2px solid var(--light);
+            padding: 10px;
+        }
+        
+        .cook:active {
+            font-size: 0.6rem;
+            border: 2px solid var(--light);
+            padding: 8px;
+        }
+        .contact{
+            display: none;
+        }
+        
+        .signup{
+            font-size: 1rem;
+            font-weight: normal;
+        }
+        
+        .logo .img{
+            width: 40px;
+            height: 40px;
+        }
+    }
+    @media screen and (max-width:450px) {
+        .text1{
+            font-size: 1rem;
+            margin-left: 10px;
+        }
+        .text2{
+            font-size: 1rem;
+        }
+        .mmain{
+            flex-direction: column;
+        }
+        header{
+            text-align: center;
+            width: 70%;
+            font-size: 24px;
+        }
+        .mmain video{
+            width: 300px;
+        }
+        .signup{
+            font-weight: normal;
+        }
+        .signup:active{
+            font-weight: normal;
+        }
+        .signup:hover{
+            font-weight: normal;
+        }
+    }
+
+
+    .chef{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        border-bottom: 2px solid var(--light);
+        padding-bottom: 20px;
+    }
+    .chef img{
+        width: 40%;
+        display: inline;
+    }
+    .chef div{
+        width: 60%;
+        margin-left: 10px;
+    }
+    .chef h1{
+        margin-bottom: 40px;
+        color: var(--light);
+    }
+    .chef p{
+        color: var(--dark);
+        
+    }
+
+
+
+
+
+
+.about_us{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid var(--light);
+}
+.about_us img{
+    width: 40%;
+}
+.about_us h1{
+    margin-bottom: 30px;
+    color: var(--light);
+}
+.about_us p{
+    color: var(--dark);
+}
+
+
+@media screen and (max-width:700px) {
+    .chef{
+        flex-direction: column;
+    }
+    .chef img{
+         width: 100%;
+         height: 50%;
+    }
+    .chef div{
+        width: 100%;
+        height: 100%;
+    }
+    .about_us{
+        flex-direction: column;
+    }
+    .about_us img{
+         width: 100%;
+         height: 50%;
+         margin-top: 30px;
+    }
+    .about_us div{
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+
+footer{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-image: url("bg.png");
+    background-size: cover;
+    display: flex  ;
+}
+
+.sec1{
+    width: 10%;
+    height: 100%;
+    position: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.sec1 img{
+    width: 90%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.ftrlogotxt{
+    transform: rotate(90deg);
+    font-size: xx-large ;
+    font-weight: bolder;
+    color: #007d21;
+    transition: all 1s ease;
+}
+.ftrlogotxt:hover{
+    color: #59ff00;
+    text-shadow: 1px 1px 1px black;
+}
+.sec2{
+    width: 90%;
+    height: 100%;
+
+}
+.ankers{
+    width: 90%;
+    height: 75%;
+    margin-top: 10px;
+    align-self: center;
+    margin-left: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 10px;
+}
+.ankers a {
+    position: relative;
+    width: max-content  ;
+    height: max-content;
+    text-decoration: none;
+    color: var(--dark);
+    /* background-color: white; */
+
+}
+.ankers a:visited{
+    color: var(--dark);
+}
+.ankers a::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 20%;
+    background-color:#007d21;
+    bottom: -3px;
+    left: 0;
+    border-radius: 100px;
+    transition: all 0.5s ease-in-out;
+}
+.ankers a:hover::after{
+    width: 100%;
+    background-color: var(--light);
+}
+
+
+
+.credits{
+    width: 100%;
+    height: 17%;
+
+}
+.socials{
+    display: flex;
+    column-gap: 10px;
+}
+.socials div{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    transition: all 0.7s ease-in;
+}
+.socials div:hover{
+    filter: invert(1);
+    box-shadow: 0px 0px 20px rgb(255, 255, 255);
+}
+.socials .yt{
+    background-image: url("yt.png");
+    background-size: contain    ;
+}
+.socials .x{
+    background-image: url("x.png");
+    background-size: contain    ;
+}
+.socials .fb{
+    background-image: url("fcbk.png");
+    background-size: contain    ;
+}
+.socials .ig{
+    background-image: url("ig.png");
+    background-size: contain    ;
+}
+
+
+.chef p {
+    line-height: 25px;
+}
+.about_us p {
+    line-height: 25px;
+}
+
+.solution{
+    display: flex;
+    flex-wrap: wrap;
+    width: max-content;
+}
+
+@media screen and (max-width:1024px) {
+    .solution{
+        width: 100vw;
+    }
+}

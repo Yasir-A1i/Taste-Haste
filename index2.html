@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semi-Transparent Div</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://wallpapers.com/images/featured/desktop-lsjkr6wg7ctq97qv.jpg') no-repeat center center fixed;
+            background-size: cover; /* Ensures the background image covers the entire page */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+
+        .overlay {
+            width: 80%;
+            max-width: 600px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7); /* White background with 70% opacity */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+        }
+
+        .overlay h1 {
+            margin: 0;
+            font-size: 2em;
+            color: rgb(255, 255, 255);
+        }
+
+        .overlay p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <h1>Semi-Transparent Div</h1>
+        <p>This is a semi-transparent div showing content beneath it.</p>
+    </div>
+</body>
+</html>
+
+

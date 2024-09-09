@@ -1,0 +1,234 @@
+.spicetext{
+    text-align: center;
+    font-weight: bolder;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--light);
+    display: flex;
+    justify-content: center;
+    width: max-content;
+    position: relative;
+}
+
+h1{
+    position: relative;
+    width: max-content;
+    font-size: 3rem;
+}
+.spicetext::after{
+    content: '';
+    width: 0;
+    height: 5px;
+    position: absolute;
+    background-color: var(--dark);
+    bottom: -3px;
+    border-radius: 100px;
+    transition: all 0.5s ease-in;
+    background-color: var(--dark);
+}
+.spicetext:hover::after{
+   width: 100%  ;
+   background-color: var(--light);
+}
+.spicetext .fast{
+    color: red;
+}
+
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.spicy1{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    overflow: hidden;
+    flex-direction: row;
+    width: 100vw;
+    height: 290px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    row-gap: 25px;
+    border-bottom: 4px solid #05be05a8;
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+}
+@media  screen and (max-width:950px) {
+    .spicy1{
+        height:max-content;
+    }
+}
+.out{
+    position: relative;
+     width: 175px;
+     height: 210px;
+     background-color: white;
+     border-radius: 7%;
+     box-shadow: 1px 1px 20px 4px #05be0536;
+     display: flex;
+     justify-content: center;
+     transition: all 0.25s ease-in-out;
+     background-image: url("bg.png");
+    background-size: 150%; 
+    
+    }
+.fvrtimg{
+    width: 30px;
+}
+.cartimg{
+    width: 30px;
+}
+.out img{
+    width: 60%;
+}
+button img{
+ height: 90%;
+}
+.low{
+    position: absolute;
+    top: 5px;
+    height: 70px;
+    z-index: 0;
+}
+.cart{
+    
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+    align-self: flex-start;
+    width: 40px;
+    height: 40px;
+    /* background-color: #0091ff; */
+    background-color: rgba(4, 255, 0, 0.4);
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart img{
+    width: 70%;
+    filter: invert(1);
+}
+.favourites{
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    /* background-color: #ff0000; */
+    background-color: rgba(255, 0, 0, 0.529);
+    border-top-right-radius: 25%;
+    border-bottom-left-radius: 25%;
+    right: 0;
+    background-size: cover; 
+}
+.favourites img{
+    width: 70%;
+    filter: invert(1);
+}
+.food{
+    position: absolute;
+
+}  
+.buy{
+    height: 50%;
+    width: 100%;
+    align-content: center;
+    border-width: 0;
+    background-color: rgba(100, 188, 70, 1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    transition: all 0.5s ease-in-out;
+
+}  
+.btns{
+    width: 90%;
+    height: 30%;
+    position: absolute;
+    bottom: 15px;;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.fvrtbtn{
+    height: 50%;
+    width: 100%;
+    border-width: 0;
+    background-color: #ff0000;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2px;
+    transition: all 0.5s ease-in-out;
+}
+.btns>*{
+    color: white;
+    font-weight: bolder;
+} 
+.btns img{
+    filter: invert(1);
+}
+.name{
+    position: absolute;
+    top: 40%;
+    font-weight: bolder;
+}
+.price{
+    position: absolute;
+    top: 50%;
+    font-weight: bold;
+}
+.cart:hover{
+    background-color: rgba(100, 188, 70, 1);
+    box-shadow: 0PX 0PX 20PX rgb(100, 188, 70, 1);
+}
+.cart img:hover{
+    filter: invert(1);
+}
+.favourites:hover{
+    background-color: #ff0000;
+    box-shadow: 0PX 0PX 20PX #ff0000b3;
+}
+.favourites img:hover{
+    filter: invert(1);
+}
+.buy:hover{
+    box-shadow: 0px 0px 20px rgba(100, 188, 70, 1);
+}
+.fvrtbtn:hover{
+    box-shadow: 0px 0px 20px #ff0000bd;
+}
+
+.out:hover{
+    width: 200px;
+    height: 250px;
+    box-shadow: 0 0 20px 0px #05be05bf;
+}
+
+
+.cold{
+    color: rgb(0, 60, 255);
+}
+.sweet{
+    color: rgb(255, 78, 137);
+}
+
